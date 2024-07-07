@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding :0;
+    box-sizing: content-box;
+    border:0;
+}
+
+body {
+    background: #131416;
+    padding-left: 3%;
+    margin-top: 2%;
+}
+
+
+
+
+.plat {
+    display:flex;
+    
+    border: 2px solid rgb(155, 109, 23);
+    height: 190px;
+    width : 55%;
+    text-decoration: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.plat:active {
+    filter: brightness(.55);
+    
+}
+
+.photoplat{
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+   border-right: 4px solid  #131416;
+    
+   
+}
+.infoplat {
+    background-color: rgb(155, 109, 23);
+    background-size: cover;
+    background-position: center;
+width: 80%;
+color : white;
+transition-duration: .3s;
+
+
+}
+
+.infoplat h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 40px;
+    text-decoration: underline;
+    
+}
+
+
+
+
+.infoplat p {
+    margin-top: 20%;
+    margin-left: 35%;
+    font-size: 1.4rem;
+    
+}
+
+
+
+
+.plat:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 3px white,
+    0px 0px 5px #777; 
+}
+
+@media  screen and (max-width: 900px) and (min-width:600px){
+
+        .plat{
+            width : 70%;
+        }
+
+}
+
+
+@media  screen and (max-width: 600px){
+
+        .photoplat{
+            width: 55%;
+        }
+
+
+}
+    

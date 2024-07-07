@@ -1,0 +1,46 @@
+body{
+    background-color: rgba(0, 0, 0, 0.626);
+}
+
+.allcontent{
+    display :grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows:  repeat(3, 250px);
+    gap: 2px;
+    border : 1px solid white;
+    width: 906px;
+    
+   margin-left: 150px;
+   
+    }
+
+
+.item {
+    border: 1px solid ;
+    padding-bottom: 20%;
+    
+   
+    
+}
+
+.item1 {
+
+    height: 750px;
+
+}
+
+.item h3 {
+  
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 30vh;
+   
+}
+
+.card1{
+    grid-column : 1 / 2 ;
+    grid-row: 1 / 2 ;
+    background-color: rgba(137, 43, 226, 0.735);
+}

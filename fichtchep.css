@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+
+
+*{
+   
+    margin: 0;
+    padding :0;
+    box-sizing: content-box;
+    
+}
+
+body {
+    background: #131416;
+    
+    
+}
+
+
+
+
+/* barre de navigation */
+
+
+
+.navbar {
+
+    position:absolute;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+   
+ position: fixed;
+ z-index: 5;
+ background-color: #131416;
+ 
+    align-items: center;
+    border-radius: 2px solid rgba(128, 128, 128, 0.658);
+    justify-content: space-between;
+    
+}
+
+
+.navbar a{
+    color : white;
+    
+}
+
+.navbar .logo {
+   font-size: 2em;
+   font-weight: bold;
+   text-decoration: none;
+  
+}
+
+.navbar .navlinks ul {
+   display: flex;
+   
+  
+}
+
+.navbar .navlinks ul li{
+   margin: 0 25px;
+   font-size: 1.3rem;
+   transition: .3s;
+   
+   list-style: none;
+}
+
+.navbar .navlinks ul li a{
+   transition: .3s;
+   text-decoration: none;
+   
+}
+
+.navbar .ham {
+   width: 35px;
+   position: absolute;
+   right: 50px;
+   display:none;
+   
+}
+
+.navbar .navlinks ul li a:hover{
+   box-shadow: 0px 0px 3px rgb(255, 255, 0),
+   0px 0px 3px orangered;
+   border-radius: 2px;
+   color :gray; 
+}
+
+.navbar .navlinks ul li a:focus{
+   color: rgba(255, 0, 0, 0.932);
+   box-shadow: 0px 0px 3px rgb(255, 255, 0),
+   0px 0px 3px orangered;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+   .navbar .ham{
+       display:block;
+       padding:0;
+   }
+
+   .navlinks{
+       top:0;
+       left: 0;
+       position: absolute;
+       background-color: rgba(0, 0, 0, 0.144);
+       width: 100%;
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       backdrop-filter: blur(2px);
+       margin-left: 0;
+       display: none;
+       
+       
+   }
+
+   
+
+   
+
+  
+
+
+
+   .navbar .navlinks ul {
+       display: flex;
+       flex-direction: column;
+      padding : 0;
+       align-items: center;
+       position: absolute;
+   }
+
+   .navbar .navlinks ul li{
+       margin: 25px 0;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+.allplat{
+    padding: 25px;
+  
+    
+}
+
+
+
+
+
+.plat {
+    display:flex;
+    
+    border: 2px solid rgb(155, 109, 23);
+    height: 220px;
+    width : 65%;
+    text-decoration: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.plat:active {
+    filter: brightness(.55);
+    
+}
+
+.photoplat{
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+   border-right: 4px solid  #131416;
+    
+   
+}
+.infoplat {
+    background-color: rgb(155, 109, 23);
+    background-size: cover;
+    background-position: center;
+width: 85%;
+color : white;
+transition-duration: .3s;
+
+
+}
+
+.infoplat h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+
+
+
+.infoplat p {
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 1.2rem;
+    
+}
+
+.infoplat h3, p {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+    
+
+
+
+
+
+.plat:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 3px white,
+    0px 0px 5px #777; 
+}
+
+@media  screen and (max-width: 900px) {
+
+    .photoplat{
+        width: 45%;
+    }
+        .plat{
+            width : 80%;
+        }
+
+}
+
+
+@media  screen and (max-width: 600px){
+
+        .plat{
+            width: 98%;
+        }
+
+        .photoplat{
+            width: 55%;
+        }
+
+
+
+}
+
+
+@media  screen and (max-width: 320px){
+
+    .infoplat p {
+        font-size: .9rem;
+    }
+    
+}
+
+@media  screen and (max-width: 400px){
+
+    .navbar .logo {
+        font-size: 1.2em;
+    }
+    .infoplat h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media  screen and (max-width: 390px){
+    
+}

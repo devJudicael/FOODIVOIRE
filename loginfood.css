@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    height: 110vh;
+    background-color:#131416;
+}
+
+.container {
+    background-color:white;
+    color: black;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px 24px;
+    border-radius: 10px;
+    height: 80%;
+    margin: auto;
+    max-height: 600px;
+    
+}
+
+.container h3{
+    text-align: center;
+}
+
+.input {
+    margin:10px 0;
+ 
+}
+
+i{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+.input input {
+    width : 100%;
+    height: 50px;
+    padding: 0 15px;
+    border: none;
+    border-bottom : 1px solid gray;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  font-size: 1rem;
+ 
+    
+    
+}
+
+button{
+    width: 100%;
+    height: 30px;
+    font-size: 1rem;
+    background-color: #131416;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: .3s;
+    
+}
+
+
+button:hover {
+     background-color: gray;
+}
+
+
+button:active{
+    background-color: rgba(0, 0, 0, 0.74);
+}
+
+
+a {
+    color: black;
+    
+}
+
+.hr {
+    margin: 24px 0;
+  
+   
+}
+
+hr {
+    width:50%;
+    margin: auto;
+}
+
+p{
+    text-align: center;
+    font-size: .9rem;
+}
+
+.allicons{
+    display: flex;
+    width: 100%;
+    
+   justify-content: center;
+   
+}
+
+.icon {
+    margin: 12px 24px;
+}
+
+.ggl img{
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+
+.icon img{
+    
+    width: 45px;
+    height: 45px;
+}
+
+
+@media  screen and (max-width:350px)  {
+    .input input {
+        font-size: .8rem;
+    }
+
+    button{
+        font-size: .8rem;
+    }
+
+    p{
+        font-size: .8rem;
+    }
+
+    .icon {
+        margin: 12px 15px;
+    }
+}
+
+
+@media  screen and (max-width:300px)  {
+
+    .container{
+        height: 95%;
+    }
+    .icon img{
+        width: 37px;
+        height: 37px;
+    }
+}
